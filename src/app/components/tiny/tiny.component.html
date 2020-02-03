@@ -1,0 +1,34 @@
+<h1>TinyMCE 5 Angular Demo</h1>
+ <!-- <editor #editor 
+   (onInit)="onEditorContentInit()"
+   (onContextMenu)="dupa($event)"
+   (onAddUndo)="onRemoveContent($event)"
+   [(ngModel)]="MockedData"
+   [init]="{
+        height: 500,
+        menubar: false,
+        plugins: [
+          'advlist autolink lists link image charmap print preview anchor contextmenu',
+          'noneditable preventdelete',
+          'searchreplace visualblocks code fullscreen',
+          'insertdatetime media table paste code help wordcount'
+        ],
+        content_css : 'assets/content-styles.css', 
+        setup: menuItem,
+        contextmenu: 'customItem1',
+        toolbar:
+          'undo redo | formatselect | bold italic backcolor | \
+          alignleft image imagetools aligncenter alignright alignjustify | \
+          bullist numlist outdent indent | removeformat | help',
+        paste_data_images: true,
+        paste_as_text: true,
+        images_dataimg_filter: blobToBase64,
+        imagetools_toolbar: 'rotateleft rotateright | flipv fliph | editimage imageoptions',
+        language_url: 'assets/langs/pl.js',
+        language: 'pl'
+      }"
+   >
+ </editor> -->
+ <textarea [innerHtml]="MockedData" id="mymce1"></textarea>
+
+ 
